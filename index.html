@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FREE TIME EARNING</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#091124;color:#fff;font-family:Arial,"Noto Sans Bengali",sans-serif}
+button,input{font:inherit}
+button{cursor:pointer}
+header{position:sticky;top:0;z-index:10;background:#111c37;padding:16px 10px;text-align:center;border-bottom:1px solid #344568;color:#ffda79;font-weight:bold}
+header small{display:block;color:#cbd5ed;font-size:11px;margin-top:5px}
+main{max-width:520px;margin:auto;padding:14px;min-height:85vh}
+.page{display:none}
+.page.active{display:block}
+.card{background:#15213d;border:1px solid #344568;border-radius:17px;padding:16px;margin:12px 0;box-shadow:0 5px 18px #0004}
+h2{font-size:20px;color:#ffda79;margin:5px 0 14px}
+h3{font-size:16px;color:#ffda79}
+p{line-height:1.8;color:#dce5fa;font-size:14px}
+.muted{color:#aebbd7;font-size:12px}
+.btn{border:0;border-radius:12px;padding:13px 15px;width:100%;font-weight:bold;margin:6px 0;background:linear-gradient(110deg,#f4c75e,#e99b38);color:#17213b}
+.btn.blue{background:linear-gradient(110deg,#557eff,#7656e9);color:white}
+.btn.green{background:linear-gradient(110deg,#16bd83,#078c75);color:white}
+.btn.red{background:#a83b50;color:white}
+.btn.gray{background:#34425f;color:white}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+input{width:100%;padding:13px;border-radius:10px;border:1px solid #506181;background:#0d1730;color:white;margin:7px 0;outline:none}
+input:focus{border-color:#f4c75e}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.menu-item{background:#192849;border:1px solid #40557d;border-radius:13px;color:white;padding:13px 7px;min-height:90px;text-align:center}
+.menu-item .ico{font-size:25px;margin-bottom:7px}
+.menu-item b{display:block;font-size:13px}
+.menu-item small{display:block;color:#b9c7e4;margin-top:5px;font-size:11px}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.stat div{background:#0d1730;border-radius:12px;padding:13px;text-align:center}
+.stat strong{display:block;color:#ffda79;font-size:19px;margin-top:6px}
+.back{background:#34425f;color:white;border:0;border-radius:9px;padding:10px 14px;margin-bottom:10px}
+.notice{background:#243657;padding:12px;border-radius:10px;color:#ffe19a;font-size:13px;line-height:1.7;margin:10px 0}
+.package{background:#0d1730;border:1px solid #3c5075;border-radius:13px;padding:13px;margin:9px 0}
+.package strong{color:#ffda79}
+.task-icon{text-align:center;font-size:40px}
+.task-detail{margin-top:12px}
+.payment-info{background:#101c36;border:1px solid #e6b94e;border-radius:13px;padding:17px;text-align:center;margin-top:22px}
+.payment-info strong{display:block;color:#ffda79;font-size:19px;margin:9px 0}
+footer{text-align:center;color:#8796b6;font-size:12px;padding:25px 10px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<header>
+🌟 WELCOME TO 𝐅𝐑𝐄𝐄 𝐓𝐈𝐌𝐄 𝐄𝐀𝐑𝐍𝐈𝐍𝐆
+<small>শিখুন • কাজ করুন • নিজের ভবিষ্যৎ গড়ুন</small>
+</header>
+
+<main>
+
+<section id="home" class="page active">
+ <div class="card">
+  <h2>🌸 আপনার অবসর সময়কে কাজে লাগান</h2>
+  <p>📱 ঘরে বসেই স্মার্টফোনের মাধ্যমে ছোট ছোট কাজ করুন।</p>
+  <p>📚 নিজের মাতৃভাষায় শিখুন কাজের সহজ পদ্ধতি।</p>
+  <p>💰 কাজ শেখার পাশাপাশি তৈরি করুন আয়ের সুযোগ।</p>
+  <p>❤️ FREE TIME EARNING – অবসর সময় হোক সম্ভাবনাময়!</p>
+  <button class="btn" onclick="showPage('register')">📝 রেজিস্ট্রেশন করুন</button>
+  <button class="btn blue" onclick="showPage('login')">🔐 লগইন করুন</button>
+ </div>
+ <div class="card">
+  <h2>আমাদের সম্পর্কে</h2>
+  <p>আপনার অবসর সময়ই হতে পারে আপনার আয়ের নতুন সম্ভাবনা! সময়ের সঠিক ব্যবহার করুন, শিখুন নতুন দক্ষতা, গড়ে তুলুন নিজের ভবিষ্যৎ।</p>
+  <p>Free Time Earning একটি অনলাইন প্ল্যাটফর্ম, যেখানে আপনি ঘরে বসেই নিজের স্মার্টফোন ব্যবহার করে অবসর সময়কে কাজে লাগাতে পারবেন। এখানে রয়েছে শেখার পাশাপাশি অনলাইনে কাজ করার বিভিন্ন সুযোগ।</p>
+  <p>আমাদের লক্ষ্য শুধু আয়ের সুযোগ তৈরি করা নয়, বরং আপনাকে নতুন কিছু শেখানো, দক্ষতা বৃদ্ধি করা এবং নিজের যোগ্যতায় এগিয়ে যাওয়ার অনুপ্রেরণা দেওয়া।</p>
+  <p>আজই শুরু হোক আপনার নতুন পথচলা!<br>শিখুন • কাজ করুন • নিজের ভবিষ্যৎ গড়ুন।</p>
+ </div>
+</section>
+
+<section id="register" class="page">
+ <button class="back" onclick="showPage('home')">← ফিরে যান</button>
+ <div class="card">
+  <h2>📝 নতুন অ্যাকাউন্ট তৈরি করুন</h2>
+  <input id="regName" placeholder="আপনার নাম">
+  <input id="regPhone" placeholder="মোবাইল নাম্বার" inputmode="numeric">
+  <input id="regPass" type="password" placeholder="পাসওয়ার্ড">
+  <input id="regConfirm" type="password" placeholder="পাসওয়ার্ড নিশ্চিত করুন">
+  <button class="btn" onclick="register()">রেজিস্ট্রেশন সম্পন্ন করুন</button>
+ </div>
+</section>
+
+<section id="login" class="page">
+ <button class="back" onclick="showPage('home')">← ফিরে যান</button>
+ <div class="card">
+  <h2>🔐 লগইন করুন</h2>
+  <input id="loginName" placeholder="আপনার নাম">
+  <input id="loginPhone" placeholder="মোবাইল নাম্বার" inputmode="numeric">
+  <input id="loginPass" type="password" placeholder="পাসওয়ার্ড">
+  <button class="btn blue" onclick="login()">লগইন</button>
+ </div>
+</section>
+
+<section id="dashboard" class="page">
+ <div class="card">
+  <h2>👋 স্বাগতম, <span id="dashName"></span></h2>
+  <div class="stat">
+   <div>আপনার ব্যালেন্স<strong id="dashBalance">৳০.০০</strong></div>
+   <div>অ্যাকাউন্ট স্ট্যাটাস<strong id="dashStatus">Inactive</strong></div>
+  </div>
+  <p>🆔 মেম্বার আইডি: <b id="dashId"></b></p>
+  <p>📱 মোবাইল: <b id="dashPhone"></b></p>
+ </div>
+
+ <div class="card">
+  <h2>📝 কাজের তালিকা</h2>
+  <p>আপনার পছন্দের কাজটি বেছে নিন।</p>
+  <div id="taskList" class="grid2"></div>
+  <div id="taskDetail" class="task-detail" style="display:none"></div>
+ </div>
+
+ <div class="grid2">
+  <button class="menu-item" onclick="showPage('activation')"><div class="ico">⚡</div><b>আইডি অ্যাক্টিভ</b><small>প্যাকেজ দেখুন</small></button>
+  <button class="menu-item" onclick="withdraw()"><div class="ico">💸</div><b>উইথড্র করুন</b><small>টাকা উত্তোলন</small></button>
+  <button class="menu-item" onclick="showPage('profile')"><div class="ico">👤</div><b>আমার প্রোফাইল</b><small>তথ্য দেখুন</small></button>
+ </div>
+ <button class="btn red" onclick="logout()">লগআউট</button>
+</section>
+
+<section id="profile" class="page">
+ <button class="back" onclick="showPage('dashboard')">← ড্যাশবোর্ড</button>
+ <div class="card">
+  <h2>👤 আমার প্রোফাইল</h2>
+  <p>নাম: <b id="profileName"></b></p>
+  <p>মোবাইল: <b id="profilePhone"></b></p>
+  <p>মেম্বার আইডি: <b id="profileId"></b></p>
+  <p>ব্যালেন্স: <b id="profileBalance"></b></p>
+  <p>স্ট্যাটাস: <b id="profileStatus"></b></p>
+ </div>
+</section>
+
+<section id="activation" class="page">
+ <button class="back" onclick="showPage('dashboard')">← ড্যাশবোর্ড</button>
+ <div class="card">
+  <h2>⚡ আইডি অ্যাক্টিভেশন</h2>
+  <p>📲 আপনি আমাদের ওয়েবসাইট থেকে নিয়মিত কাজ করতে চাইলে আগে আপনার আইডি অ্যাক্টিভ করতে হবে। আইডি অ্যাক্টিভ না থাকলে কোনো কাজ জমা দিতে পারবেন না।</p>
+  <h3>📦 অ্যাক্টিভেশন প্যাকেজ</h3>
+  <div id="packageList"></div>
+
+  <div class="payment-info">
+   💳 **FREE TIME EARNING**
+   <strong>bKash: 01407-609048</strong>
+   <p>আইডি অ্যাক্টিভ করার জন্য এই নাম্বারে পেমেন্ট করুন।</p>
+  </div>
+ </div>
+</section>
+
+<section id="teamLogin" class="page">
+ <button class="back" onclick="showPage('home')">← ফিরে যান</button>
+ <div class="card">
+  <h2>🛡️ Team Panel Login</h2>
+  <input id="adminPass" type="password" placeholder="প্যানেল পাসওয়ার্ড">
+  <button class="btn blue" onclick="adminLogin()">প্রবেশ করুন</button>
+ </div>
+</section>
+
+<section id="admin" class="page">
+ <button class="back" onclick="showPage('home')">← লগআউট</button>
+ <div class="card">
+  <h2>🛡️ Team Panel</h2>
+  <div id="memberList"></div>
+ </div>
+</section>
+
+<footer>
+OFFICE ADDRESS<br>
+DHAKA, Bangladesh<br>
+©2026 FREE TIME EARNING
+<br><br>
+<a href="#" onclick="showPage('teamLogin');return false" style="color:#8998ba">Team Panel</a>
+</footer>
+</main>
+
+<script>
+const WHATSAPP = "8801606871929";
+const ADMIN_PASSWORD = "ttcmgksb";
+const STORAGE_KEY = "fte_members_v2";
+const SESSION_KEY = "fte_current_member";
+
+const packageData = [
+ {duration:"এক মাস",name:"1 Month",price:100},
+ {duration:"দুই মাস",name:"2 Months",price:150},
+ {duration:"তিন মাস",name:"3 Months",price:200},
+ {duration:"চার মাস",name:"4 Months",price:250},
+ {duration:"ছয় মাস",name:"6 Months",price:300},
+ {duration:"এক বছর",name:"1 Year",price:500}
+];
+
+const taskData = [
+ {icon:"➕",name:"যোগ করুন",question:"২৫ + ১৫ = কত?",answer:"40"},
+ {icon:"➖",name:"বিয়োগ করুন",question:"৮০ - ৩০ = কত?",answer:"50"},
+ {icon:"✖️",name:"গুণ করুন",question:"৭ × ৬ = কত?",answer:"42"},
+ {icon:"➗",name:"ভাগ করুন",question:"৬০ ÷ ৫ = কত?",answer:"12"},
+ {icon:"🌍",name:"সাধারণ জ্ঞান",question:"বাংলাদেশের রাজধানীর নাম কী?",answer:"ঢাকা"},
+ {icon:"🇧🇩",name:"জাতীয় ফুল",question:"বাংলাদেশের জাতীয় ফুল কী?",answer:"শাপলা"},
+ {icon:"🐅",name:"জাতীয় পশু",question:"বাংলাদেশের জাতীয় পশু কী?",answer:"বাঘ"},
+ {icon:"🐦",name:"জাতীয় পাখি",question:"বাংলাদেশের জাতীয় পাখি কী?",answer:"দোয়েল"},
+ {icon:"🧠",name:"ধাঁধা ১",question:"যার দাঁত আছে কিন্তু কামড়াতে পারে না, সেটি কী?",answer:"চিরুনি"},
+ {icon:"🧠",name:"ধাঁধা ২",question:"যত কাটবে তত বড় হবে, সেটি কী?",answer:"গর্ত"},
+ {icon:"📅",name:"সপ্তাহ",question:"এক সপ্তাহে কয় দিন?",answer:"7"},
+ {icon:"📆",name:"বছর",question:"এক বছরে কয় মাস?",answer:"12"},
+ {icon:"🌞",name:"দিন",question:"এক দিনে কয় ঘণ্টা?",answer:"24"},
+ {icon:"💧",name:"পানি",question:"পানির রাসায়নিক সংকেত কী?",answer:"h2o"},
+ {icon:"📖",name:"বাংলা বানান",question:"'বিদ্যালয়' শব্দটি লিখুন।",answer:"বিদ্যালয়"},
+ {icon:"🔤",name:"ইংরেজি শব্দ",question:"বাংলায় 'Book' এর অর্থ কী?",answer:"বই"},
+ {icon:"🌱",name:"প্রকৃতি",question:"গাছ খাদ্য তৈরি করে কোন প্রক্রিয়ায়?",answer:"সালোকসংশ্লেষণ"},
+ {icon:"🐟",name:"জলজ প্রাণী",question:"মাছ কোথায় বাস করে?",answer:"পানিতে"},
+ {icon:"☀️",name:"সত্য / মিথ্যা",question:"সূর্য পূর্ব দিকে ওঠে। সত্য নাকি মিথ্যা?",answer:"সত্য"},
+ {icon:"⌨️",name:"টাইপিং",question:"নিচের শব্দটি লিখুন: বাংলাদেশ",answer:"বাংলাদেশ"}
+];
+
+function getMembers(){
+ try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||[]}
+ catch(e){return []}
+}
+function saveMembers(list){localStorage.setItem(STORAGE_KEY,JSON.stringify(list))}
+function currentMember(){
+ const id=localStorage.getItem(SESSION_KEY);
+ return getMembers().find(m=>m.id===id)||null;
+}
+function updateMember(updated){
+ const list=getMembers();
+ const index=list.findIndex(m=>m.id===updated.id);
+ if(index>=0){list[index]=updated;saveMembers(list)}
+}
+function showPage(id){
+ document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+ document.getElementById(id).classList.add("active");
+ if(id==="dashboard")renderDashboard();
+ if(id==="profile")renderProfile();
+ if(id==="activation")renderPackages();
+ if(id==="admin")renderAdmin();
+ window.scrollTo(0,0);
+}
+function register(){
+ const name=document.getElementById("regName").value.trim();
+ const phone=document.getElementById("regPhone").value.trim();
+ const pass=document.getElementById("regPass").value;
+ const confirm=document.getElementById("regConfirm").value;
+ if(!name||!phone||!pass||!confirm){alert("সব তথ্য পূরণ করুন।");return}
+ if(pass!==confirm){alert("দুটি পাসওয়ার্ড মিলছে না।");return}
+ const list=getMembers();
+ if(list.some(m=>m.phone===phone)){alert("এই নম্বরে ইতিমধ্যে অ্যাকাউন্ট আছে।");return}
+ list.push({id:"FTE"+Date.now().toString().slice(-8),name,phone,pass,balance:0,active:false,timers:{}});
+ saveMembers(list);
+ alert("আপনার রেজিস্ট্রেশন সম্পন্ন হয়েছে ✅");
+ showPage("login");
+}
+function login(){
+ const name=document.getElementById("loginName").value.trim();
+ const phone=document.getElementById("loginPhone").value.trim();
+ const pass=document.getElementById("loginPass").value;
+ const member=getMembers().find(m=>m.name===name&&m.phone===phone&&m.pass===pass);
+ if(!member){alert("আপনার তথ্য সঠিক নয়। আবার চেষ্টা করুন।");return}
+ localStorage.setItem(SESSION_KEY,member.id);
+ showPage("dashboard");
+}
+function logout(){
+ localStorage.removeItem(SESSION_KEY);
+ showPage("home");
+}
+function renderDashboard(){
+ const m=currentMember();
+ if(!m){showPage("login");return}
+ document.getElementById("dashName").textContent=m.name;
+ document.getElementById("dashPhone").textContent=m.phone;
+ document.getElementById("dashId").textContent=m.id;
+ document.getElementById("dashBalance").textContent="৳"+Number(m.balance).toFixed(2);
+ const status=document.getElementById("dashStatus");
+ status.textContent=m.active?"Active":"Inactive";
+ status.style.color=m.active?"#45e4ae":"#ff9b9b";
+ renderTasks();
+}
+function renderProfile(){
+ const m=currentMember();
+ if(!m){showPage("login");return}
+ document.getElementById("profileName").textContent=m.name;
+ document.getElementById("profilePhone").textContent=m.phone;
+ document.getElementById("profileId").textContent=m.id;
+ document.getElementById("profileBalance").textContent="৳"+Number(m.balance).toFixed(2);
+ document.getElementById("profileStatus").textContent=m.active?"Active":"Inactive";
+}
+
+/* WhatsApp: international number format, digits only */
+function openWhatsApp(message){
+ const url="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(message);
+ window.location.href=url;
+}
+
+/* Packages */
+function renderPackages(){
+ document.getElementById("packageList").innerHTML=packageData.map((p,i)=>`
+  <div class="package">
+   <strong>${p.name}</strong> — ৳${p.price}
+   <button class="btn" type="button" onclick="choosePackage(${i})">এই প্যাকেজটি নিন</button>
+  </div>`).join("");
+}
+function choosePackage(index){
+ const m=currentMember();
+ if(!m){alert("আগে লগইন করুন।");showPage("login");return}
+ const p=packageData[index];
+ openWhatsApp("আমি "+p.duration+" জন্য আইডি অ্যাক্টিভ করতে চাই।\n\nনাম: "+m.name+"\nমোবাইল: "+m.phone+"\nপ্যাকেজ: "+p.name+"\nমূল্য: ৳"+p.price);
+}
+
+/* Withdrawal */
+function withdraw(){
+ const m=currentMember();
+ if(!m)return;
+ if(Number(m.balance)<200){
+  alert("আপনার পর্যাপ্ত ব্যালেন্স নেই। ২০০ টাকা হলে টাকা তুলতে পারবেন।");
+  return;
+ }
+ openWhatsApp("আমি টাকা তুলতে চাই\n\nনাম: "+m.name+"\nমোবাইল: "+m.phone+"\nমেম্বার আইডি: "+m.id+"\nব্যালেন্স: ৳"+Number(m.balance).toFixed(2));
+}
+
+/* Tasks */
+function renderTasks(){
+ const m=currentMember();
+ if(!m)return;
+ const list=document.getElementById("taskList");
+ const detail=document.getElementById("taskDetail");
+ detail.style.display="none";
+ list.style.display="grid";
+ list.innerHTML=taskData.map((t,i)=>{
+  const left=Math.max(0,Number((m.timers||{})[i]||0)-Date.now());
+  return `<button class="menu-item" onclick="openTask(${i})">
+   <div class="ico">${t.icon}</div>
+   <b>${i+1}. ${t.name}</b>
+   <small>${left>0?"⏳ "+formatTime(left):"কাজ শুরু করতে ক্লিক করুন"}</small>
+  </button>`;
+ }).join("");
+}
+function formatTime(ms){
+ const total=Math.ceil(ms/1000);
+ const h=Math.floor(total/3600);
+ const min=Math.floor((total%3600)/60);
+ const sec=total%60;
+ return (h?h+"ঘ ":"")+(min?min+"মি ":"")+sec+"সে";
+}
+function openTask(index){
+ const m=currentMember();
+ if(!m)return;
+ if(!m.active){
+  alert("নিয়মিত কাজ করতে চাইলে আগে আইডি অ্যাক্টিভ করুন।");
+  return;
+ }
+ const t=taskData[index];
+ const until=Number((m.timers||{})[index]||0);
+ const left=Math.max(0,until-Date.now());
+ const list=document.getElementById("taskList");
+ const detail=document.getElementById("taskDetail");
+ list.style.display="none";
+ detail.style.display="block";
+ detail.innerHTML=`
+  <button class="back" onclick="renderTasks()">← সব কাজ দেখুন</button>
+  <div class="card">
+   <div class="task-icon">${t.icon}</div>
+   <h2>${index+1}. ${t.name}</h2>
+   <p>${t.question}</p>
+   <input id="answerInput" placeholder="আপনার উত্তর লিখুন" ${left>0?"disabled":""}>
+   <div class="notice">${left>0?"⏳ আবার কাজ করতে অপেক্ষা করুন: "+formatTime(left):"আপনার উত্তর লিখে জমা দিন।"}</div>
+   <button class="btn green" onclick="submitTask(${index})" ${left>0?"disabled":""}>উত্তর জমা দিন</button>
+  </div>`;
+}
+function normalizeAnswer(value){
+ return String(value||"").trim().toLowerCase().replace(/\s+/g,"");
+}
+function submitTask(index){
+ const m=currentMember();
+ if(!m)return;
+ if(!m.active){alert("আপনার আইডি অ্যাক্টিভ নয়।");return}
+ const until=Number((m.timers||{})[index]||0);
+ if(until>Date.now()){
+  alert("এই কাজটি আবার করতে কিছুক্ষণ অপেক্ষা করুন।");
+  openTask(index);
+  return;
+ }
+ const answer=document.getElementById("answerInput").value;
+ if(!answer.trim()){alert("উত্তর লিখুন।");return}
+ if(normalizeAnswer(answer)!==normalizeAnswer(taskData[index].answer)){
+  alert("উত্তর সঠিক হয়নি। আবার চেষ্টা করুন।");
+  return;
+ }
+ m.balance=Number(m.balance)+0.50;
+ if(!m.timers)m.timers={};
+ m.timers[index]=Date.now()+50*60*1000;
+ updateMember(m);
+ alert("সঠিক উত্তর জমা হয়েছে।");
+ renderDashboard();
+ openTask(index);
+}
+
+/* Admin */
+function adminLogin(){
+ if(document.getElementById("adminPass").value!==ADMIN_PASSWORD){
+  alert("পাসওয়ার্ড সঠিক নয়।");
+  return;
+ }
+ showPage("admin");
+}
+function renderAdmin(){
+ const list=getMembers();
+ const box=document.getElementById("memberList");
+ if(!list.length){box.innerHTML="<p>এখনো কোনো সদস্য নেই।</p>";return}
+ box.innerHTML=list.map(m=>`
+  <div class="package">
+   <b>${escapeHTML(m.name)}</b><br>
+   <small>${escapeHTML(m.phone)} | ${m.id}</small>
+   <p>ব্যালেন্স: ৳${Number(m.balance).toFixed(2)}<br>স্ট্যাটাস: ${m.active?"Active":"Inactive"}</p>
+   <button class="btn green" onclick="setActive('${m.id}',true)">আইডি অ্যাক্টিভ করুন</button>
+   <button class="btn red" onclick="setActive('${m.id}',false)">আইডি বন্ধ করুন</button>
+  </div>`).join("");
+}
+function setActive(id,status){
+ const list=getMembers();
+ const m=list.find(x=>x.id===id);
+ if(!m)return;
+ m.active=status;
+ saveMembers(list);
+ renderAdmin();
+}
+function escapeHTML(s){
+ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+renderPackages();
+</script>
+</body>
+</html>
